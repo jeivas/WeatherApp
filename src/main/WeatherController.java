@@ -18,10 +18,6 @@ import java.io.IOException;
 public class WeatherController extends JFrame {
     private String searchFieldResult;
 
-    public String getSearchFieldResult() {
-        return searchFieldResult;
-    }
-
     public WeatherController() {
         super("Weather app");
 
