@@ -1,4 +1,4 @@
-package challenges.exceptions;
+package exceptions;
 
 public class NonExistentAdressException extends RuntimeException {
     private String message;
