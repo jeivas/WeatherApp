@@ -10,15 +10,7 @@ public class DeserializeJson {
         return results;
     }
 
-    public void setResults(List<CityInfo> results) {
-        this.results = results;
-    }
-
     public City getCurrent() {
         return current;
-    }
-
-    public void setHourly(City current) {
-        this.current = this.current;
     }
 }

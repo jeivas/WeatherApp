@@ -9,15 +9,13 @@ import models.JSON;
 import java.io.IOException;
 
 public class WeatherApp {
-    Gson gson = new Gson();
 
     public static String getLocation(String city) {
         if(city.contains(" ")) city = city.replace(" ", "+");
 
         String address = "https://geocoding-api.open-meteo.com/v1/search?name=" + city + "&count=10&language=en&format=json";
         try {
-            String json = new JSON(address).getJsonResponse();
-            return json;
+            return new JSON(address).getJsonResponse();
         } catch (NullPointerException e) {
             System.out.println(e.getMessage() + " City not found");
             throw new RuntimeException(e);
