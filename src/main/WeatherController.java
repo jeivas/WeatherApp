@@ -2,7 +2,6 @@ package main;
 
 import com.google.gson.Gson;
 import models.City;
-import models.CityInfo;
 import models.DeserializeJson;
 
 import javax.imageio.ImageIO;
@@ -184,15 +183,5 @@ public class WeatherController extends JFrame {
         }
         System.out.println("Could not find any resource");
         return null;
-    }
-
-    private void removePlaceHolder(JTextField textField) {
-        textField.setText("");
-    }
-
-    private void addPlaceHolder(JTextField textField) {
-        textField.setForeground(new java.awt.Color(86, 86, 86));
-        textField.setCaretPosition(0);
-        textField.setText("Type your city:");
     }
 }
